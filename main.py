@@ -20,8 +20,8 @@ def seg_sentence(sentence):
     return outstr
 
 
-inputs = open('pl.txt', 'r')
-outputs = open('output.txt', 'w')
+inputs = open('input.txt', 'r')
+outputs = open('qgz.txt', 'w')
 for line in inputs:
     line_seg = seg_sentence(line)  # 这里的返回值是字符串
     outputs.write(line_seg + '\n')
